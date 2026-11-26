@@ -15,8 +15,7 @@ cycle showed the new greeting live.
 
 ## What is still missing (the part not done in the study)
 
-The GitHub + public-URL step was verified against a local server only, because
-Dewa has no GitHub account yet. The local repo exists
+The GitHub + public-URL step was verified against a local server only, because no GitHub account yet. The local repo exists
 (branch `master`, one commit, no remote). Finishing it for real needs Dewa
 to create his own free GitHub account — that step cannot be done for him.
 
