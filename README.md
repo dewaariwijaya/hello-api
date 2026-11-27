@@ -1,11 +1,11 @@
-# Lesson #159 — Ship It: Deploy Your First App From Git to a Live URL
+# Ship It: Deploy an App From Git to a Live URL
 
 ## The app
 
 `app.py` — a minimal deployable app using only the Python standard library
 (no dependencies, so no `requirements.txt` entries are needed for it to run).
 
-- `GET /` → `{"message": "Hello from Dewa's redeployed app!"}`
+- `GET /` → `{"message": "Hello from hello-api!"}`
 - `GET /health` → `{"status": "ok"}`
 - Listens on `$PORT` (defaults to 8000), bound to `0.0.0.0` so a host can reach it.
 
@@ -13,10 +13,13 @@ Verified locally on 2026-11-25: `Listening on port 8000`, `/` and `/health`
 both returned the expected JSON, and an edit → commit → restart → reload
 cycle showed the new greeting live.
 
-## What is still missing (the part not done in the study)
+## Status
 
-The GitHub + public-URL step was verified against a local server only, because no GitHub account yet. The local repo exists
-(branch `master`, one commit, no remote). 
+Done for real on 2026-11-26: this app lives in the public GitHub repo
+`hello-api`, and the GitHub Codespaces run below was carried out end to end —
+the forwarded public URL served the greeting on `/` and
+{"status": "ok"} on `/health`. The two paths below are kept as the
+how-it-was-done record.
 
 ## Finish it for real — path A: GitHub Codespaces (fastest, GitHub only)
 
