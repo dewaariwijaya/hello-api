@@ -18,7 +18,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == "/health":
             self._send(200, {"status": "ok"})
         else:
-            self._send(200, {"message": "Hello from Dewa's redeployed app!"})
+            self._send(200, {"message": "Hello from hello-api!"})
 
     def log_message(self, *args):  # keep logs clean
         print("request:", self.path)
